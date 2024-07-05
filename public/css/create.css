@@ -1,0 +1,56 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+/* Genel input stilleri */
+input[type="date"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 1px solid #ccc;
+    padding: 6px;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 200px;
+    box-sizing: border-box;
+}
+
+/* Placeholder rengi */
+input[type="date"]::-webkit-input-placeholder {
+    color: #999;
+}
+input[type="date"]::-moz-placeholder {
+    color: #999;
+}
+input[type="date"]:-ms-input-placeholder {
+    color: #999;
+}
+input[type="date"]::-ms-input-placeholder {
+    color: #999;
+}
+input[type="date"]::placeholder {
+    color: #999;
+}
+
+/* Focus durumunda */
+input[type="date"]:focus {
+    border-color: #66afe9;
+    outline: none;
+    box-shadow: 0 0 5px rgba(102, 175, 233, 0.6);
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    cursor: pointer;
+    scale: 1.75;
+}
+
+
+/* Tarih seçici ikonu hover durumu */
+input[type="date"]::-webkit-calendar-picker-indicator:hover {
+    opacity: .7;
+}
